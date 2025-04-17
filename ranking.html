@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Marketplace</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="sass/main.scss">
+
+    <!-- bootstrap icon cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+
+    <!-- awsome icone cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Work sans font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- space mono font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- navbar stats here  -->
+    <nav class="navbar navbar-expand-lg navbar-scroll border-bottom border-dark" data-mdb-navbar-init>
+        <div class="container-fluid mx-md-3">
+            <a class="navbar-brand mx-0" href="index.html">
+                <img src="images/index/nav/Logo.png" class="img-fluid" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-lg-auto d-lg-flex align-items-lg-center gap-4 text-lg-start">
+                    <li class="nav-item">
+                        <a class="nav-link" href="marketplace.html">Marketplace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ranking.html">Rankings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="wallet.html">Connect a wallet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a type="button" href="create.html" class="main-btn bg-purple text-decoration-none">
+                            <i class="bi pe-2 bi-person"></i>Sign Up
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section starts here  -->
+
+    <section class="hero-section mt-7">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-sm-4 mb-3">
+                    <h3>
+                        Top Creators
+                    </h3>
+                    <p>Check out top ranking NFT artists on the NFT Marketplace.</p>
+                </div>
+            </div>
+            <div class="row my-4 d-md-flex d-none">
+                <div class="col-3 text-center border-bottom border-3 pb-3">
+                    <h5 class="mb-0">Today</h5>
+                </div>
+                <div class="col-3 text-center">
+                    <h5 class="mb-0 text-lite">This Week</h5>
+                </div>
+                <div class="col-3 text-center">
+                    <h5 class="mb-0 text-lite">This Month</h5>
+                </div>
+                <div class="col-3 text-center">
+                    <h5 class="mb-0 text-lite">All Time</h5>
+                </div>
+            </div>
+
+            <div class="row my-4 d-md-none d-flex">
+                <div class="col-3 text-center border-bottom border-3 pb-2">
+                    <h5 class="mb-0">1d</h5>
+                </div>
+                <div class="col-3 text-center">
+                    <h5 class="mb-0 text-lite">7day</h5>
+                </div>
+                <div class="col-3 text-center">
+                    <h5 class="mb-0 text-lite">30day</h5>
+                </div>
+                <div class="col-3 text-center">
+                    <h5 class="mb-0 text-lite">All Time</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ranking section starts here -->
+    <section class="ranking-section">
+        <div class="container">
+            <!-- head row  -->
+            <div class="row py-2 border border-card-bg rounded-pill px-2 mb-3">
+                <div class="col-1"><span class="p-16-12 text-fam text-lite">#</span></div>
+                <div class="col-4 col-sm-5"><span class="p-16-12 text-fam text-lite">Artist</span></div>
+                <div class="col-2 d-md-flex d-none"><span class="p-16-12 text-fam text-lite">Change</span></div>
+                <div class="col-12 col-sm-3 col-md-2 d-sm-flex d-none"><span class="p-16-12 text-fam text-lite">NFTs
+                        Sold</span></div>
+                <div class="col-7 col-sm-3 col-md-2 text-end"><span class="p-16-12 text-fam text-lite ">Volume</span>
+                </div>
+            </div>
+            <!-- content row  -->
+
+            <div class="row py-sm-2 py-1 border align-items-center border-card-bg bg-card-bg rounded-4 px-2 mb-3">
+                <div class="col-1"><span class="text-lite bg-main-bg rounded-circle px-2">1</span></div>
+                <div class="col-7 col-sm-5">
+                    <div class="box d-flex gap-2 align-items-center">
+                        <img src="images/pages/ranking/Avatar.png" class="img-fluid" alt="">
+                        <h5 class="mb-0 ">Ruben Carder</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-md-flex d-none"><span class="p-16-12 text-fam text-green text-fam">+1.41%</span>
+                </div>
+                <div class="col-12 col-sm-3 col-md-2 d-sm-flex d-none justify-content-center"><span
+                        class="p-16-12 text-fam text-light">602</span></div>
+                <div class="col-4 col-sm-3 col-md-2 text-end"><span class="p-16-12 text-fam text-light ">12.4 ETH</span>
+                </div>
+            </div>
+
+            <div class="row py-sm-2 py-1 border align-items-center border-card-bg bg-card-bg rounded-4 px-2 mb-3">
+                <div class="col-1"><span class="text-lite bg-main-bg rounded-circle px-2">2</span></div>
+                <div class="col-7 col-sm-5">
+                    <div class="box d-flex gap-2 align-items-center">
+                        <img src="images/pages/ranking/Asset 12 2.png" class="img-fluid" alt="">
+                        <h5 class="mb-0 ">Max Flexer</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-md-flex d-none"><span class="p-16-12 text-fam text-green text-fam">+1.41%</span>
+                </div>
+                <div class="col-12 col-sm-3 col-md-2 d-sm-flex d-none justify-content-center"><span
+                        class="p-16-12 text-fam text-light">602</span></div>
+                <div class="col-4 col-sm-3 col-md-2 text-end"><span class="p-16-12 text-fam text-light ">12.4 ETH</span>
+                </div>
+            </div>
+
+            <div class="row py-sm-2 py-1 border align-items-center border-card-bg bg-card-bg rounded-4 px-2 mb-3">
+                <div class="col-1"><span class="text-lite bg-main-bg rounded-circle px-2">3</span></div>
+                <div class="col-7 col-sm-5">
+                    <div class="box d-flex gap-2 align-items-center">
+                        <img src="images/pages/ranking/Asset 12 2 (2).png" class="img-fluid" alt="">
+                        <h5 class="mb-0 ">Bolt Walton</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-md-flex d-none"><span class="p-16-12 text-fam text-green text-fam">+1.41%</span>
+                </div>
+                <div class="col-12 col-sm-3 col-md-2 d-sm-flex d-none justify-content-center"><span
+                        class="p-16-12 text-fam text-light">602</span></div>
+                <div class="col-4 col-sm-3 col-md-2 text-end"><span class="p-16-12 text-fam text-light ">12.4 ETH</span>
+                </div>
+            </div>
+
+            <div class="row py-sm-2 py-1 border align-items-center border-card-bg bg-card-bg rounded-4 px-2 mb-3">
+                <div class="col-1"><span class="text-lite bg-main-bg rounded-circle px-2">4</span></div>
+                <div class="col-7 col-sm-5">
+                    <div class="box d-flex gap-2 align-items-center">
+                        <img src="images/pages/ranking/Asset 12 2 (1).png" class="img-fluid" alt="">
+                        <h5 class="mb-0 ">Ghost Hunter</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-md-flex d-none"><span class="p-16-12 text-fam text-green text-fam">+1.41%</span>
+                </div>
+                <div class="col-12 col-sm-3 col-md-2 d-sm-flex d-none justify-content-center"><span
+                        class="p-16-12 text-fam text-light">602</span></div>
+                <div class="col-4 col-sm-3 col-md-2 text-end"><span class="p-16-12 text-fam text-light ">12.4 ETH</span>
+                </div>
+            </div>
+
+            <div class="row py-sm-2 py-1 border align-items-center border-card-bg bg-card-bg rounded-4 px-2 mb-3">
+                <div class="col-1"><span class="text-lite bg-main-bg rounded-circle px-2">5</span></div>
+                <div class="col-7 col-sm-5">
+                    <div class="box d-flex gap-2 align-items-center">
+                        <img src="images/pages/ranking/Avatar (1).png" class="img-fluid" alt="">
+                        <h5 class="mb-0 ">Great Loin</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-md-flex d-none"><span class="p-16-12 text-fam text-green text-fam">+1.41%</span>
+                </div>
+                <div class="col-12 col-sm-3 col-md-2 d-sm-flex d-none justify-content-center"><span
+                        class="p-16-12 text-fam text-light">602</span></div>
+                <div class="col-4 col-sm-3 col-md-2 text-end"><span class="p-16-12 text-fam text-light ">12.4 ETH</span>
+                </div>
+            </div>
+
+            <div class="row py-sm-2 py-1 border align-items-center border-card-bg bg-card-bg rounded-4 px-2 mb-3">
+                <div class="col-1"><span class="text-lite bg-main-bg rounded-circle px-2">6</span></div>
+                <div class="col-7 col-sm-5">
+                    <div class="box d-flex gap-2 align-items-center">
+                        <img src="images/pages/ranking/Avatar (2).png" class="img-fluid" alt="">
+                        <h5 class="mb-0 ">King Slaughter</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-md-flex d-none"><span class="p-16-12 text-fam text-green text-fam">+1.41%</span>
+                </div>
+                <div class="col-12 col-sm-3 col-md-2 d-sm-flex d-none justify-content-center"><span
+                        class="p-16-12 text-fam text-light">602</span></div>
+                <div class="col-4 col-sm-3 col-md-2 text-end"><span class="p-16-12 text-fam text-light ">12.4 ETH</span>
+                </div>
+            </div>
+
+            <div class="row py-sm-2 py-1 border align-items-center border-card-bg bg-card-bg rounded-4 px-2 mb-3">
+                <div class="col-1"><span class="text-lite bg-main-bg rounded-circle px-2">7</span></div>
+                <div class="col-7 col-sm-5">
+                    <div class="box d-flex gap-2 align-items-center">
+                        <img src="images/pages/ranking/Avatar (3).png" class="img-fluid" alt="">
+                        <h5 class="mb-0 ">Iron Blade</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-md-flex d-none"><span class="p-16-12 text-fam text-green text-fam">+1.41%</span>
+                </div>
+                <div class="col-12 col-sm-3 col-md-2 d-sm-flex d-none justify-content-center"><span
+                        class="p-16-12 text-fam text-light">602</span></div>
+                <div class="col-4 col-sm-3 col-md-2 text-end"><span class="p-16-12 text-fam text-light ">12.4 ETH</span>
+                </div>
+            </div>
+
+            <div class="row py-sm-2 py-1 border align-items-center border-card-bg bg-card-bg rounded-4 px-2 mb-3">
+                <div class="col-1"><span class="text-lite bg-main-bg rounded-circle px-2">8</span></div>
+                <div class="col-7 col-sm-5">
+                    <div class="box d-flex gap-2 align-items-center">
+                        <img src="images/pages/ranking/Avatar (4).png" class="img-fluid" alt="">
+                        <h5 class="mb-0 ">Crime Master</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-md-flex d-none"><span class="p-16-12 text-fam text-green text-fam">+1.41%</span>
+                </div>
+                <div class="col-12 col-sm-3 col-md-2 d-sm-flex d-none justify-content-center"><span
+                        class="p-16-12 text-fam text-light">602</span></div>
+                <div class="col-4 col-sm-3 col-md-2 text-end"><span class="p-16-12 text-fam text-light ">12.4 ETH</span>
+                </div>
+            </div>
+
+            <div class="row py-sm-2 py-1 border align-items-center border-card-bg bg-card-bg rounded-4 px-2 mb-3">
+                <div class="col-1"><span class="text-lite bg-main-bg rounded-circle px-2">9</span></div>
+                <div class="col-7 col-sm-5">
+                    <div class="box d-flex gap-2 align-items-center">
+                        <img src="images/pages/ranking/Avatar (5).png" class="img-fluid" alt="">
+                        <h5 class="mb-0 ">King Slaughter</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-md-flex d-none"><span class="p-16-12 text-fam text-green text-fam">+1.41%</span>
+                </div>
+                <div class="col-12 col-sm-3 col-md-2 d-sm-flex d-none justify-content-center"><span
+                        class="p-16-12 text-fam text-light">602</span></div>
+                <div class="col-4 col-sm-3 col-md-2 text-end"><span class="p-16-12 text-fam text-light ">12.4 ETH</span>
+                </div>
+            </div>
+
+            <div class="row py-sm-2 py-1 border align-items-center border-card-bg bg-card-bg rounded-4 px-2 mb-3">
+                <div class="col-1"><span class="text-lite bg-main-bg rounded-circle px-2">10</span></div>
+                <div class="col-7 col-sm-5">
+                    <div class="box d-flex gap-2 align-items-center">
+                        <img src="images/pages/ranking/Avatar (6).png" class="img-fluid" alt="">
+                        <h5 class="mb-0 ">Max Hilton</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-md-flex d-none"><span class="p-16-12 text-fam text-green text-fam">+1.41%</span>
+                </div>
+                <div class="col-12 col-sm-3 col-md-2 d-sm-flex d-none justify-content-center"><span
+                        class="p-16-12 text-fam text-light">602</span></div>
+                <div class="col-4 col-sm-3 col-md-2 text-end"><span class="p-16-12 text-fam text-light ">12.4 ETH</span>
+                </div>
+            </div>
+
+            <div class="row py-sm-2 py-1 border align-items-center border-card-bg bg-card-bg rounded-4 px-2 mb-3">
+                <div class="col-1"><span class="text-lite bg-main-bg rounded-circle px-2">11</span></div>
+                <div class="col-7 col-sm-5">
+                    <div class="box d-flex gap-2 align-items-center">
+                        <img src="images/pages/ranking/Avatar (7).png" class="img-fluid" alt="">
+                        <h5 class="mb-0 ">Power Ranger</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-md-flex d-none"><span class="p-16-12 text-fam text-green text-fam">+1.41%</span>
+                </div>
+                <div class="col-12 col-sm-3 col-md-2 d-sm-flex d-none justify-content-center"><span
+                        class="p-16-12 text-fam text-light">602</span></div>
+                <div class="col-4 col-sm-3 col-md-2 text-end"><span class="p-16-12 text-fam text-light ">12.4 ETH</span>
+                </div>
+            </div>
+
+            <div class="row py-sm-2 py-1 border align-items-center border-card-bg bg-card-bg rounded-4 px-2 mb-3">
+                <div class="col-1"><span class="text-lite bg-main-bg rounded-circle px-2">12</span></div>
+                <div class="col-7 col-sm-5">
+                    <div class="box d-flex gap-2 align-items-center">
+                        <img src="images/pages/ranking/Avatar.png" class="img-fluid" alt="">
+                        <h5 class="mb-0 ">Ruben Carder</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-md-flex d-none"><span class="p-16-12 text-fam text-green text-fam">+1.41%</span>
+                </div>
+                <div class="col-12 col-sm-3 col-md-2 d-sm-flex d-none justify-content-center"><span
+                        class="p-16-12 text-fam text-light">602</span></div>
+                <div class="col-4 col-sm-3 col-md-2 text-end"><span class="p-16-12 text-fam text-light ">12.4 ETH</span>
+                </div>
+            </div>
+
+            <div class="row py-sm-2 py-1 border align-items-center border-card-bg bg-card-bg rounded-4 px-2 mb-3">
+                <div class="col-1"><span class="text-lite bg-main-bg rounded-circle px-2">13</span></div>
+                <div class="col-7 col-sm-5">
+                    <div class="box d-flex gap-2 align-items-center">
+                        <img src="images/pages/ranking/Asset 12 2.png" class="img-fluid" alt="">
+                        <h5 class="mb-0 ">Max Flexer</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-md-flex d-none"><span class="p-16-12 text-fam text-green text-fam">+1.41%</span>
+                </div>
+                <div class="col-12 col-sm-3 col-md-2 d-sm-flex d-none justify-content-center"><span
+                        class="p-16-12 text-fam text-light">602</span></div>
+                <div class="col-4 col-sm-3 col-md-2 text-end"><span class="p-16-12 text-fam text-light ">12.4 ETH</span>
+                </div>
+            </div>
+
+            <div class="row py-sm-2 py-1 border align-items-center border-card-bg bg-card-bg rounded-4 px-2 mb-3">
+                <div class="col-1"><span class="text-lite bg-main-bg rounded-circle px-2">14</span></div>
+                <div class="col-7 col-sm-5">
+                    <div class="box d-flex gap-2 align-items-center">
+                        <img src="images/pages/ranking/Asset 12 2 (2).png" class="img-fluid" alt="">
+                        <h5 class="mb-0 ">Bolt Walton</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-md-flex d-none"><span class="p-16-12 text-fam text-green text-fam">+1.41%</span>
+                </div>
+                <div class="col-12 col-sm-3 col-md-2 d-sm-flex d-none justify-content-center"><span
+                        class="p-16-12 text-fam text-light">602</span></div>
+                <div class="col-4 col-sm-3 col-md-2 text-end"><span class="p-16-12 text-fam text-light ">12.4 ETH</span>
+                </div>
+            </div>
+
+            <div class="row py-sm-2 py-1 border align-items-center border-card-bg bg-card-bg rounded-4 px-2 mb-3">
+                <div class="col-1"><span class="text-lite bg-main-bg rounded-circle px-2">15</span></div>
+                <div class="col-7 col-sm-5">
+                    <div class="box d-flex gap-2 align-items-center">
+                        <img src="images/pages/ranking/Asset 12 2 (1).png" class="img-fluid" alt="">
+                        <h5 class="mb-0 ">Ghost Hunter</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-md-flex d-none"><span class="p-16-12 text-fam text-green text-fam">+1.41%</span>
+                </div>
+                <div class="col-12 col-sm-3 col-md-2 d-sm-flex d-none justify-content-center"><span
+                        class="p-16-12 text-fam text-light">602</span></div>
+                <div class="col-4 col-sm-3 col-md-2 text-end"><span class="p-16-12 text-fam text-light ">12.4 ETH</span>
+                </div>
+            </div>
+
+            <div class="row py-sm-2 py-1 border align-items-center border-card-bg bg-card-bg rounded-4 px-2 mb-3">
+                <div class="col-1"><span class="text-lite bg-main-bg rounded-circle px-2">16</span></div>
+                <div class="col-7 col-sm-5">
+                    <div class="box d-flex gap-2 align-items-center">
+                        <img src="images/pages/ranking/Avatar (1).png" class="img-fluid" alt="">
+                        <h5 class="mb-0 ">Great Loin</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-md-flex d-none"><span class="p-16-12 text-fam text-green text-fam">+1.41%</span>
+                </div>
+                <div class="col-12 col-sm-3 col-md-2 d-sm-flex d-none justify-content-center"><span
+                        class="p-16-12 text-fam text-light">602</span></div>
+                <div class="col-4 col-sm-3 col-md-2 text-end"><span class="p-16-12 text-fam text-light ">12.4 ETH</span>
+                </div>
+            </div>
+
+            <div class="row py-sm-2 py-1 border align-items-center border-card-bg bg-card-bg rounded-4 px-2 mb-3">
+                <div class="col-1"><span class="text-lite bg-main-bg rounded-circle px-2">17</span></div>
+                <div class="col-7 col-sm-5">
+                    <div class="box d-flex gap-2 align-items-center">
+                        <img src="images/pages/ranking/Avatar (2).png" class="img-fluid" alt="">
+                        <h5 class="mb-0 ">King Slaughter</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-md-flex d-none"><span class="p-16-12 text-fam text-green text-fam">+1.41%</span>
+                </div>
+                <div class="col-12 col-sm-3 col-md-2 d-sm-flex d-none justify-content-center"><span
+                        class="p-16-12 text-fam text-light">602</span></div>
+                <div class="col-4 col-sm-3 col-md-2 text-end"><span class="p-16-12 text-fam text-light ">12.4 ETH</span>
+                </div>
+            </div>
+
+            <div class="row py-sm-2 py-1 border align-items-center border-card-bg bg-card-bg rounded-4 px-2 mb-3">
+                <div class="col-1"><span class="text-lite bg-main-bg rounded-circle px-2">18</span></div>
+                <div class="col-7 col-sm-5">
+                    <div class="box d-flex gap-2 align-items-center">
+                        <img src="images/pages/ranking/Avatar (3).png" class="img-fluid" alt="">
+                        <h5 class="mb-0 ">Iron Blade</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-md-flex d-none"><span class="p-16-12 text-fam text-green text-fam">+1.41%</span>
+                </div>
+                <div class="col-12 col-sm-3 col-md-2 d-sm-flex d-none justify-content-center"><span
+                        class="p-16-12 text-fam text-light">602</span></div>
+                <div class="col-4 col-sm-3 col-md-2 text-end"><span class="p-16-12 text-fam text-light ">12.4 ETH</span>
+                </div>
+            </div>
+
+            <div class="row py-sm-2 py-1 border align-items-center border-card-bg bg-card-bg rounded-4 px-2 mb-3">
+                <div class="col-1"><span class="text-lite bg-main-bg rounded-circle px-2">19</span></div>
+                <div class="col-7 col-sm-5">
+                    <div class="box d-flex gap-2 align-items-center">
+                        <img src="images/pages/ranking/Avatar (4).png" class="img-fluid" alt="">
+                        <h5 class="mb-0 ">Crime Master</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-md-flex d-none"><span class="p-16-12 text-fam text-green text-fam">+1.41%</span>
+                </div>
+                <div class="col-12 col-sm-3 col-md-2 d-sm-flex d-none justify-content-center"><span
+                        class="p-16-12 text-fam text-light">602</span></div>
+                <div class="col-4 col-sm-3 col-md-2 text-end"><span class="p-16-12 text-fam text-light ">12.4 ETH</span>
+                </div>
+            </div>
+
+            <div class="row py-sm-2 py-1 border align-items-center border-card-bg bg-card-bg rounded-4 px-2 mb-3">
+                <div class="col-1"><span class="text-lite bg-main-bg rounded-circle px-2">20</span></div>
+                <div class="col-7 col-sm-5">
+                    <div class="box d-flex gap-2 align-items-center">
+                        <img src="images/pages/ranking/Avatar (5).png" class="img-fluid" alt="">
+                        <h5 class="mb-0 ">King Slaughter</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-md-flex d-none"><span class="p-16-12 text-fam text-green text-fam">+1.41%</span>
+                </div>
+                <div class="col-12 col-sm-3 col-md-2 d-sm-flex d-none justify-content-center"><span
+                        class="p-16-12 text-fam text-light">602</span></div>
+                <div class="col-4 col-sm-3 col-md-2 text-end"><span class="p-16-12 text-fam text-light ">12.4 ETH</span>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- footer section starts here  -->
+    <section class="footer-section bg-card-bg py-5">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <img src="images/index/nav/Logo.png" class="img-fluid mb-3" alt="logo">
+                    <p class="p-16 text-gray">NFT marketplace UI created with Anima for Figma.</p>
+                    <p class="p-16 text-gray">Join our community</p>
+                    <div class="box">
+                        <i class="text-gray pe-2 fs-3 fab fa-discord"></i>
+                        <i class="text-gray pe-2 fs-3 fab fa-youtube"></i>
+                        <i class="text-gray pe-2 fs-3 fab fa-twitter"></i>
+                        <i class="text-gray fs-3 fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="text-22 fw-bold mb-4">Explore</h5>
+                    <div class="box d-flex flex-column gap-3">
+                        <a href="#" class="text-gray text-decoration-none">Marketplace</a>
+                        <a href="#" class="text-gray text-decoration-none">Rankings</a>
+                        <a href="#" class="text-gray text-decoration-none">Connect a wallet </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-8">
+                            <h5 class="text-22 fw-bold mb-4 mb-sm-3">Join Our Weakly Digest</h5>
+                            <p class="p-16 text-gray">Get exclusive promotions & updates straight to your inbox.</p>
+                        </div>
+                        <div class="col-md-12 col-lg-10">
+                            <div class="input-group d-md-flex  d-none rounded-4 overflow-hidden">
+                                <input type="email" class="form-control py-2 text-dark"
+                                    placeholder="Enter your email here">
+                                <button class="btn btn-subscribe bg-purple px-lg-4 px-md-1 " type="button">
+                                    <span class="bi bi-envelope-fill"></span> Subscribe
+                                </button>
+                            </div>
+                            <div class="subscription-form d-block d-md-none mt-3">
+                                <div class="mb-3">
+                                    <input type="email" class="form-control rounded-pill"
+                                        placeholder="Enter Your Email Address">
+                                </div>
+                                <button type="submit" class="btn btn-subscribe rounded-pill w-100 bg-purple">
+                                    <i class="bi bi-envelope-fill me-2"></i>Subscribe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-main-bg my-4">
+            <div class="row">
+                <div class="col-12">
+                    <p class="p-12-mono text-gray">Ⓒ NFT Market. Use this template freely.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- bootstrap javascrippt  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384..."
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

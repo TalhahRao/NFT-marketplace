@@ -1,0 +1,54 @@
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-spacers: (
+  6: 4rem,
+  7: 5rem,
+  8: 6rem,
+  9: 7rem,
+  10: 8rem,
+  11: 9rem,
+  12: 10rem,
+  13: 11rem,
+  19: 17rem,
+  20: 18rem,
+  25: 23rem,
+  26: 24rem,
+  27: 25rem
+);
+
+
+$spacers: map-merge($spacers, $custom-spacers);
+
+
+$custom-theme-colors: (
+    "main-bg": #2b2b2b,
+    "purple": #A259FF,
+    "card-bg": #3B3B3B,
+    "lite": #858584,
+    "gray": #CCCCCC,
+    "green": #078f00,
+);   
+ 
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+$font-sizes: (
+  1: 2.5rem,  // Default: 2.5rem
+  2: 2rem, // Default: 2rem
+  3: 1.75rem,   // Default: 1.75rem
+  4: 1.5rem,
+  5: 1.25rem,
+  6: 1rem
+);
+$custom-font-sizes: (
+
+);
+
+$font-sizes: map-merge($font-sizes, $custom-font-sizes);
+
+// Bootstrap ko import karo
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+

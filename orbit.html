@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Marketplace</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="sass/main.scss">
+
+    <!-- bootstrap icon cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+
+    <!-- awsome icone cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Work sans font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- space mono font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- navbar stats here  -->
+    <nav class="navbar navbar-expand-lg navbar-scroll border-bottom border-dark" data-mdb-navbar-init>
+        <div class="container-fluid mx-md-3">
+            <a class="navbar-brand mx-0" href="index.html">
+                <img src="images/index/nav/Logo.png" class="img-fluid" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-lg-auto d-lg-flex align-items-lg-center gap-4 text-lg-start">
+                    <li class="nav-item">
+                        <a class="nav-link" href="marketplace.html">Marketplace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ranking.html">Rankings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="wallet.html">Connect a wallet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a type="button" href="create.html" class="main-btn bg-purple text-decoration-none">
+                            <i class="bi pe-2 bi-person"></i>Sign Up
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- top section starts here  -->
+    <section class="orbit-top-section justify-content-center text-center overflow-hidden">
+        <div class="container-fluid px-0">
+            <div class="row px-0 ">
+                <div class="col-12 px-0">
+                    <img src="images/pages/orbit/heroimage.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- hero section starts here  -->
+
+    <section class="orbit-hero-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <h3>The Orbitions</h3>
+                            <p class="text-lite">Minted on Sep 30, 2022</p>
+                        </div>
+                        <div class="col-lg-8 col-md-10 d-md-none mb-4 d-flex">
+                            <div class="row bg-card-bg py-4 px-2 rounded-4  ">
+                                <div class="col-12">
+                                    <span class="p-12-mono text-light">
+                                        Auction ends in:
+                                    </span>
+                                </div>
+                                <div class="col-4">
+                                    <h2>59 :</h2>
+                                </div>
+                                <div class="col-4">
+                                    <h2>59 :</h2>
+                                </div>
+                                <div class="col-4">
+                                    <h2>59</h2>
+                                </div>
+                                <div class="col-4">
+                                    <span class="p-12-mono">Hours</span>
+                                </div>
+                                <div class="col-4">
+                                    <span class="p-12-mono">Minutes</span>
+                                </div>
+                                <div class="col-4">
+                                    <span class="p-12-mono">Seconds</span>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <a type="button" href="create.html"
+                                        class="main-btn bg-purple py-3 w-100 text-center text-decoration-none">
+                                        Place Bid
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <h5 class="text-fam text-lite fw-bold">Created By</h5>
+                            <div class="box d-flex gap-3">
+                                <img src="images/pages/orbit/user.png" class="img-fluid" alt="user">
+                                <h5 class="mb-0">Orbition</h5>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <h5 class="text-fam text-lite fw-bold">Description</h5>
+                            <p class="mb-0 fw-light">The Orbitians</p>
+                            <p class="fw-light">is a collection of 10,000 unique NFTs on the Ethereum blockchain,</p>
+                            <p class="fw-light">There are all sorts of beings in the NFT Universe. The most advanced and
+                                friendly of the bunch are Orbitians</p>
+                            <p class="mb-0 fw-light">They live in a metal space machines, high up in the sky and only
+                                have one foot on Earth.</p>
+                            <p class="mb-0 fw-light">These Orbitians are a peaceful race, but they have been at war with
+                                a group of invaders for many generations. The invaders are called Upside-Downs, because
+                                of their inverted bodies that live on the ground, yet do not know any other way to be.
+                                Upside-Downs believe that they will be able to win this war if they could only get an
+                                eye into Orbitian territory, so they've taken to make human beings their target.</p>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <h5 class="text-fam text-lite fw-bold">Details</h5>
+                            <div class="box d-flex gap-2 mb-2">
+                                <i class="bi bi-globe text-lite fs-4"></i>
+                                <p class="mb-0">View on Etherscan</p>
+                            </div>
+                            <div class="box d-flex gap-2">
+                                <i class="bi bi-globe text-lite fs-4"></i>
+                                <p class="mb-0">View Orignal</p>
+                            </div>
+                            <h5 class="text-lite fw-bold mt-4">Tags</h5>
+                            <div class="col-sm-12 col-6">
+                                <div class="box mt-4 d-flex flex-column flex-sm-row gap-4">
+                                    <a href="#" class="text-decoration-none bg-card-bg px-3 py-2 rounded-4">
+                                        ANIMATION
+                                    </a>
+                                    <a href="#" class="text-decoration-none bg-card-bg px-3 py-2 rounded-4">
+                                        ILLUSTRATION
+                                    </a>
+                                    <a href="#" class="text-decoration-none bg-card-bg px-3 py-2 rounded-4">
+                                        MOON
+                                    </a>
+                                    <a href="#" class="text-decoration-none bg-card-bg px-3 py-2 rounded-4">
+                                        FIRE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row d-md-flex d-none justify-content-sm-end">
+                        <div class="col-lg-8 col-md-10 ">
+                            <div class="row bg-card-bg py-4 px-2 rounded-4  ">
+                                <div class="col-12">
+                                    <span class="p-12-mono text-light">
+                                        Auction ends in:
+                                    </span>
+                                </div>
+                                <div class="col-4">
+                                    <h2>59 :</h2>
+                                </div>
+                                <div class="col-4">
+                                    <h2>59 :</h2>
+                                </div>
+                                <div class="col-4">
+                                    <h2>59</h2>
+                                </div>
+                                <div class="col-4">
+                                    <span class="p-12-mono">Hours</span>
+                                </div>
+                                <div class="col-4">
+                                    <span class="p-12-mono">Minutes</span>
+                                </div>
+                                <div class="col-4">
+                                    <span class="p-12-mono">Seconds</span>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <a type="button" href="create.html"
+                                        class="main-btn bg-purple py-3 w-100 text-center text-decoration-none">
+                                        Place Bid
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- market section starts here -->
+    <section class="market-section container-fluid bg-card-bg py-5 border-bottom">
+        <div class="container">
+            <div class="row mb-md-5 mb-4">
+                <div class="col-md-7 col-12 align-items-center d-flex">
+                    <h2 class="mb-0">More From This Artist</h2>
+                </div>
+                <div class="col-md-5 col-12 align-items-center d-none d-md-flex justify-content-end">
+                    <button class="main-btn2 btn-sm btn px-md-4 px-2 py-md-3 py-2">
+                        <i class="bi pe-2 text-purple bi bi-eye"></i>Go To Artist Page                        Rankings</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-3 col-sm-6 col-12">
+                    <a class="text-decoration-none" href="orbit.html">
+                        <div class="card rounded-4 bg-main-bg">
+                            <img src="images/pages/market/Image Placeholder.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Distant Galaxy</h5>
+                                <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <img src="images/index/discover/user/discover user 1.png" class="img-fluid"
+                                            alt=" user img">
+                                        <span class="px-2 p-16-mono">MoonDancer</span>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="text-lite p-12-mono">Price</span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span class="text-lite p-12-mono">Highest Bid</span>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class=" p-16-mono">1.63 ETH</span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span class=" p-16-mono">0.33 ETH</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3 col-sm-6 col-12">
+                    <div class="card rounded-4 bg-main-bg">
+                        <img src="images/pages/market/Image Placeholder (1).png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Distant Galaxy</h5>
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <img src="images/index/discover/user/discover user 2.png" class="img-fluid"
+                                        alt=" user img">
+                                    <span class="px-2 p-16-mono">MoonDancer</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class="text-lite p-12-mono">Price</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="text-lite p-12-mono">Highest Bid</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class=" p-16-mono">1.63 ETH</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class=" p-16-mono">0.33 ETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 col-sm-6 col-12 d-block d-sm-none d-md-block">
+                    <div class="card rounded-4 bg-main-bg">
+                        <img src="images/pages/market/Image Placeholder (2).png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Distant Galaxy</h5>
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <img src="images/index/discover/user/discover user 3.png" class="img-fluid"
+                                        alt=" user img">
+                                    <span class="px-2 p-16-mono">MoonDancer</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class="text-lite p-12-mono">Price</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="text-lite p-12-mono">Highest Bid</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class=" p-16-mono">1.63 ETH</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class=" p-16-mono">0.33 ETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 col-sm-6 col-12">
+                    <div class="card rounded-4 bg-main-bg">
+                        <img src="images/pages/market/Image Placeholder (3).png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Distant Galaxy</h5>
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <img src="images/index/discover/user/discover user 1.png" class="img-fluid"
+                                        alt=" user img">
+                                    <span class="px-2 p-16-mono">MoonDancer</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class="text-lite p-12-mono">Price</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="text-lite p-12-mono">Highest Bid</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class=" p-16-mono">1.63 ETH</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class=" p-16-mono">0.33 ETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 col-sm-6 col-12">
+                    <div class="card rounded-4 bg-main-bg">
+                        <img src="images/pages/market/Image Placeholder (4).png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Distant Galaxy</h5>
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <img src="images/index/discover/user/discover user 2.png" class="img-fluid"
+                                        alt=" user img">
+                                    <span class="px-2 p-16-mono">MoonDancer</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class="text-lite p-12-mono">Price</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="text-lite p-12-mono">Highest Bid</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class=" p-16-mono">1.63 ETH</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class=" p-16-mono">0.33 ETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 col-sm-6 col-12 d-block d-sm-none d-md-block">
+                    <div class="card rounded-4 bg-main-bg">
+                        <img src="images/pages/market/Image Placeholder (5).png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Distant Galaxy</h5>
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <img src="images/index/discover/user/discover user 3.png" class="img-fluid"
+                                        alt=" user img">
+                                    <span class="px-2 p-16-mono">MoonDancer</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class="text-lite p-12-mono">Price</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="text-lite p-12-mono">Highest Bid</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class=" p-16-mono">1.63 ETH</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class=" p-16-mono">0.33 ETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 col-sm-6 col-12">
+                    <div class="card rounded-4 bg-main-bg">
+                        <img src="images/pages/market/Image Placeholder (6).png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Distant Galaxy</h5>
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <img src="images/index/discover/user/discover user 1.png" class="img-fluid"
+                                        alt=" user img">
+                                    <span class="px-2 p-16-mono">MoonDancer</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class="text-lite p-12-mono">Price</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="text-lite p-12-mono">Highest Bid</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class=" p-16-mono">1.63 ETH</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class=" p-16-mono">0.33 ETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 col-sm-6 col-12">
+                    <div class="card rounded-4 bg-main-bg">
+                        <img src="images/pages/market/Image Placeholder (7).png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Distant Galaxy</h5>
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <img src="images/index/discover/user/discover user 2.png" class="img-fluid"
+                                        alt=" user img">
+                                    <span class="px-2 p-16-mono">MoonDancer</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class="text-lite p-12-mono">Price</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="text-lite p-12-mono">Highest Bid</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class=" p-16-mono">1.63 ETH</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class=" p-16-mono">0.33 ETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 col-sm-6 col-12 d-block d-sm-none d-md-block">
+                    <div class="card rounded-4 bg-main-bg">
+                        <img src="images/pages/market/Image Placeholder (8).png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Distant Galaxy</h5>
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <img src="images/index/discover/user/discover user 3.png" class="img-fluid"
+                                        alt=" user img">
+                                    <span class="px-2 p-16-mono">MoonDancer</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class="text-lite p-12-mono">Price</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="text-lite p-12-mono">Highest Bid</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class=" p-16-mono">1.63 ETH</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class=" p-16-mono">0.33 ETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 col-sm-6 col-12">
+                    <div class="card rounded-4 bg-main-bg">
+                        <img src="images/pages/market/Image Placeholder (9).png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Distant Galaxy</h5>
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <img src="images/index/discover/user/discover user 1.png" class="img-fluid"
+                                        alt=" user img">
+                                    <span class="px-2 p-16-mono">MoonDancer</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class="text-lite p-12-mono">Price</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="text-lite p-12-mono">Highest Bid</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class=" p-16-mono">1.63 ETH</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class=" p-16-mono">0.33 ETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 col-sm-6 col-12">
+                    <div class="card rounded-4 bg-main-bg">
+                        <img src="images/pages/market/Image Placeholder (10).png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Distant Galaxy</h5>
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <img src="images/index/discover/user/discover user 2.png" class="img-fluid"
+                                        alt=" user img">
+                                    <span class="px-2 p-16-mono">MoonDancer</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class="text-lite p-12-mono">Price</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="text-lite p-12-mono">Highest Bid</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class=" p-16-mono">1.63 ETH</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class=" p-16-mono">0.33 ETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 col-sm-6 col-12 d-block d-sm-none d-md-block">
+                    <div class="card rounded-4 bg-main-bg">
+                        <img src="images/pages/market/Image Placeholder (8).png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Distant Galaxy</h5>
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <img src="images/index/discover/user/discover user 3.png" class="img-fluid"
+                                        alt=" user img">
+                                    <span class="px-2 p-16-mono">MoonDancer</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class="text-lite p-12-mono">Price</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="text-lite p-12-mono">Highest Bid</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class=" p-16-mono">1.63 ETH</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class=" p-16-mono">0.33 ETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section starts here  -->
+    <section class="footer-section bg-card-bg py-5">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <img src="images/index/nav/Logo.png" class="img-fluid mb-3" alt="logo">
+                    <p class="p-16 text-gray">NFT marketplace UI created with Anima for Figma.</p>
+                    <p class="p-16 text-gray">Join our community</p>
+                    <div class="box">
+                        <i class="text-gray pe-2 fs-3 fab fa-discord"></i>
+                        <i class="text-gray pe-2 fs-3 fab fa-youtube"></i>
+                        <i class="text-gray pe-2 fs-3 fab fa-twitter"></i>
+                        <i class="text-gray fs-3 fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="text-22 fw-bold mb-4">Explore</h5>
+                    <div class="box d-flex flex-column gap-3">
+                        <a href="#" class="text-gray text-decoration-none">Marketplace</a>
+                        <a href="#" class="text-gray text-decoration-none">Rankings</a>
+                        <a href="#" class="text-gray text-decoration-none">Connect a wallet </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-8">
+                            <h5 class="text-22 fw-bold mb-4 mb-sm-3">Join Our Weakly Digest</h5>
+                            <p class="p-16 text-gray">Get exclusive promotions & updates straight to your inbox.</p>
+                        </div>
+                        <div class="col-md-12 col-lg-10">
+                            <div class="input-group d-md-flex  d-none rounded-4 overflow-hidden">
+                                <input type="email" class="form-control py-2 text-dark"
+                                    placeholder="Enter your email here">
+                                <button class="btn btn-subscribe bg-purple px-lg-4 px-md-1 " type="button">
+                                    <span class="bi bi-envelope-fill"></span> Subscribe
+                                </button>
+                            </div>
+                            <div class="subscription-form d-block d-md-none mt-3">
+                                <div class="mb-3">
+                                    <input type="email" class="form-control rounded-pill"
+                                        placeholder="Enter Your Email Address">
+                                </div>
+                                <button type="submit" class="btn btn-subscribe rounded-pill w-100 bg-purple">
+                                    <i class="bi bi-envelope-fill me-2"></i>Subscribe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-main-bg my-4">
+            <div class="row">
+                <div class="col-12">
+                    <p class="p-12-mono text-gray">Ⓒ NFT Market. Use this template freely.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- bootstrap javascrippt  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384..."
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

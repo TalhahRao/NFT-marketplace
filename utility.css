@@ -1,0 +1,47 @@
+.text-fam {
+    font-family: "Space Mono", monospace !important;
+}
+.p-16-mono{
+    font-size: 1rem !important;
+    font-family:  "Space Mono", monospace !important;
+}
+.p-16{
+    font-size: 1rem;
+}
+.text-22{
+    font-size: 1.375rem !important;
+    font-family:  "Space Mono", monospace !important;
+}
+.p-12-mono{
+    font-size: 0.75rem !important;
+    font-family:  "Space Mono", monospace !important;
+}
+.p-16-12{
+    font-size: 1rem;
+}
+h1 {
+    font-size: 4.18rem; 
+}
+h2 {
+    font-size: 2.375rem;
+}
+h3{
+    font-size: 3.187rem;
+}
+h5 {
+    font-size: 1.375rem;
+}
+p {
+    font-size: 1.37rem;
+}
+.main-btn {
+    border-radius: 16px;
+    background-color: #A259FF;
+    padding: 10px 10px;
+}
+.main-btn2 {
+    border-radius: 16px;
+    border: 2px solid #A259FF;
+    padding: 10px 10px ;
+    white-space: no-warp !important;
+}

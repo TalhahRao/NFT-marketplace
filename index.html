@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Marketplace</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="sass/main.scss">
+
+    <!-- bootstrap icon cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+
+    <!-- awsome icone cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Work sans font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- space mono font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- navbar stats here  -->
+    <nav class="navbar navbar-expand-lg navbar-scroll border-bottom border-dark" data-mdb-navbar-init>
+        <div class="container-fluid mx-md-3">
+            <a class="navbar-brand mx-0" href="index.html">
+                <img src="images/index/nav/Logo.png" class="img-fluid" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-lg-auto d-lg-flex align-items-lg-center gap-4 text-lg-start">
+                    <li class="nav-item">
+                        <a class="nav-link" href="marketplace.html">Marketplace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ranking.html">Rankings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="wallet.html">Connect a wallet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a type="button" href="create.html" class="main-btn bg-purple text-decoration-none">
+                            <i class="bi pe-2 bi-person"></i>Sign Up
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section starts here  -->
+    <section class="home-hero-section my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="row mb-md-3 mb-2">
+                        <div class="col-11 d-md-flex d-none">
+                            <h1 class="mb-0 ">Discover digital art & Collect NFTs</h1>
+                        </div>
+                        <div class="col-12 d-md-none d-flex">
+                            <h1 class="mb-0">Discover digital art & Collect NFTs</h1>
+                        </div>
+                    </div>
+                    <div class="row mb-md-3 mb-1">
+                        <div class="col-11 ">
+                            <p class="d-none d-md-flex"> NFT marketplace UI created with Anima for Figma. Collect,
+                                buy and sell art
+                                from more than 20k NFT artists.</p>
+                        </div>
+                        <div class="col-12 ">
+                            <p class="d-flex d-md-none"> NFT marketplace UI created with Anima for Figma. Collect,
+                                buy and sell art
+                                from more than 20k NFT artists.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mb-md-4 mb-2">
+                            <button class="main-btn btn-sm btn px-md-5 px-4 py-md-3 py-2"><i
+                                    class="bi pe-2 bi-rocket-takeoff"></i>Get
+                                Started</button>
+                        </div>
+                    </div>
+                    <div class="row d-none d-md-flex">
+                        <div class="col-4">
+                            <h4 class="fs-3 fw-bold text-fam mb-1">240k+</h4>
+                            <p class="fs-4">Total Sale</p>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="fs-3 fw-bold text-fam mb-1">240k+</h4>
+                            <p class="fs-4">Auctions</p>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="fs-3 fw-bold text-fam mb-1">240k+</h4>
+                            <p class="fs-24">Artists</p>
+                        </div>
+                    </div>
+                    <div class="row d-flex d-md-none">
+                        <div class="col-4">
+                            <h4 class="fs-5 fw-bold text-fam mb-1">240k+</h4>
+                            <p class="fs-6">Total </p>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="fs-5 fw-bold text-fam mb-1">240k+</h4>
+                            <p class="fs-6">Auctions</p>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="fs-5 fw-bold text-fam mb-1">240k+</h4>
+                            <p class="fs-6">Artists</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card bg-main-bg">
+                                <img src="images/index/Hero/hero.png" class="card-img-top img-fluid" alt="...">
+                                <div class="card-body bg-card-bg">
+                                    <h5 class="card-title fs-22">Space Walking</h5>
+
+                                    <a href="#" class="text-light text-decoration-none"><img
+                                            src="images/index/Hero/hero user.png" class="img-fluid pe-3"
+                                            alt="nothinng">Animakid</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- trending section starts here  -->
+
+    <section class="trending-section py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="">Trending Collection</h2>
+                    <p class="">Checkout our weekly updated trending collection.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-12 d-sm-flex">
+                    <div class="row">
+                        <div class="col-12 mb-2">
+                            <img src="images/index/trending/col-1-1.png" class="w-100 img-fluid px-0" alt="error">
+                        </div>
+                        <div class="col-4 text-center">
+                            <img src="images/index/trending/col-1-2.png" class="img-fluid" alt="error">
+                        </div>
+                        <div class="col-4 text-center">
+                            <img src="images/index/trending/col-1-3.png" class="img-fluid" alt="error">
+                        </div>
+                        <div class="col-4 text-center">
+                            <img src="images/index/trending/col-1-4.png" class="img-fluid" alt="error">
+                        </div>
+                        <div class="col-12 mt-2">
+                            <h5 class="card-title mb-2">DSGN Animals</h5>
+
+                            <a href="#" class="text-light text-decoration-none"><img
+                                    src="images/index/Hero/hero user.png" class="img-fluid pe-3"
+                                    alt="nothinng">Animakid</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 d-none d-sm-flex">
+                    <div class="row">
+                        <div class="col-12 mb-2">
+                            <img src="images/index/trending/col-2-1.png" class="w-100 img-fluid px-0" alt="error">
+                        </div>
+                        <div class="col-4">
+                            <img src="images/index/trending/col-2-2.png" class="img-fluid" alt="error">
+                        </div>
+                        <div class="col-4">
+                            <img src="images/index/trending/col-2-3.png" class="img-fluid" alt="error">
+                        </div>
+                        <div class="col-4">
+                            <img src="images/index/trending/col-1-4.png" class="img-fluid" alt="error">
+                        </div>
+                        <div class="col-12 mt-2">
+                            <h5 class="card-title mb-2">Magic Mushrooms</h5>
+
+                            <a href="#" class="text-light text-decoration-none"><img
+                                    src="images/index/Hero/hero user.png" class="img-fluid pe-3"
+                                    alt="nothinng">Shroomie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 d-none d-md-flex ">
+                    <div class="row">
+                        <div class="col-12 mb-2">
+                            <img src="images/index/trending/col-3-1.png" class="w-100 img-fluid px-0" alt="error">
+                        </div>
+                        <div class="col-4">
+                            <img src="images/index/trending/col-2-2.png" class="img-fluid" alt="error">
+                        </div>
+                        <div class="col-4">
+                            <img src="images/index/trending/col-3-3.png" class="img-fluid" alt="error">
+                        </div>
+                        <div class="col-4">
+                            <img src="images/index/trending/col-1-4.png" class="img-fluid" alt="error">
+                        </div>
+                        <div class="col-12 mt-2">
+                            <h5 class="card-title mb-2">Disco Machines</h5>
+
+                            <a href="#" class="text-light text-decoration-none"><img
+                                    src="images/index/Hero/hero user.png" class="img-fluid pe-3"
+                                    alt="nothinng">BeKind2Robots</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- top Creator section starts here  -->
+    <section class="top-creator-section my-5 d-md-block d-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-6 col-12">
+                    <h2>Top Creators</h2>
+                    <p>Checkout Top Rated Creators on the NFT Marketplace</p>
+                </div>
+                <div class="col-md-5 col-sm-6 col-12 align-items-center d-none d-sm-flex justify-content-end">
+                    <button class="main-btn2 btn-sm btn px-md-5 px-3 py-md-3 py-2">
+                        <i class="bi pe-2 text-purple bi bi-eye"></i>View
+                        Rankings</button>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-3 ">
+                    <a class="text-decoration-none" href="creatorhub.html">
+                        <div class="box py-4  bg-card-bg rounded-4 text-center">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-8 position-relative">
+                                    <img src="images/index/creators/Avatar Placeholder (9).png" class="img-fluid mb-3"
+                                        alt="creator img">
+                                    <div
+                                        class="mini-creator-card bg-main-bg top-0 start-0 position-absolute rounded-circle">
+                                        <span class="text-lite px-2">1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-8">
+                                    <h5 class="mb-1">Animakid</h5>
+                                </div>
+                                <div class="col-10">
+                                    <span class="text-lite">Total Sales: <span class="text-white">34.53
+                                            ETH</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <div class="box py-4  bg-card-bg rounded-4 text-center">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8 position-relative">
+                                <img src="images/index/creators/Avatar Placeholder (1).png" class="img-fluid mb-3"
+                                    alt="creator img">
+                                <div
+                                    class="mini-creator-card bg-main-bg top-0 start-0 position-absolute rounded-circle">
+                                    <span class="text-lite px-2">1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8">
+                                <h5 class="mb-1">DigiLab</h5>
+                            </div>
+                            <div class="col-10">
+                                <span class="text-lite">Total Sales: <span class="text-white">34.53 ETH</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box py-4  bg-card-bg rounded-4 text-center">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8 position-relative">
+                                <img src="images/index/creators/Avatar Placeholder (2).png" class="img-fluid mb-3"
+                                    alt="creator img">
+                                <div
+                                    class="mini-creator-card bg-main-bg top-0 start-0 position-absolute rounded-circle">
+                                    <span class="text-lite px-2">1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8">
+                                <h5 class="mb-1">GravityOne</h5>
+                            </div>
+                            <div class="col-10">
+                                <span class="text-lite">Total Sales: <span class="text-white">34.53 ETH</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box py-4  bg-card-bg rounded-4 text-center">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8 position-relative">
+                                <img src="images/index/creators/Avatar Placeholder (3).png" class="img-fluid mb-3"
+                                    alt="creator img">
+                                <div
+                                    class="mini-creator-card bg-main-bg top-0 start-0 position-absolute rounded-circle">
+                                    <span class="text-lite px-2">1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8">
+                                <h5 class="mb-1">Juanie</h5>
+                            </div>
+                            <div class="col-10">
+                                <span class="text-lite">Total Sales: <span class="text-white">34.53 ETH</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-3 ">
+                    <div class="box py-4  bg-card-bg rounded-4 text-center">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8 position-relative">
+                                <img src="images/index/creators/Avatar Placeholder (4).png" class="img-fluid mb-3"
+                                    alt="creator img">
+                                <div
+                                    class="mini-creator-card bg-main-bg top-0 start-0 position-absolute rounded-circle">
+                                    <span class="text-lite px-2">1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8">
+                                <h5 class="mb-1">BlueWhale</h5>
+                            </div>
+                            <div class="col-10">
+                                <span class="text-lite">Total Sales: <span class="text-white">34.53 ETH</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="box py-4  bg-card-bg rounded-4 text-center">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8 position-relative">
+                                <img src="images/index/creators/Avatar Placeholder (5).png" class="img-fluid mb-3"
+                                    alt="creator img">
+                                <div
+                                    class="mini-creator-card bg-main-bg top-0 start-0 position-absolute rounded-circle">
+                                    <span class="text-lite px-2">1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8">
+                                <h5 class="mb-1">Mr Fox</h5>
+                            </div>
+                            <div class="col-10">
+                                <span class="text-lite">Total Sales: <span class="text-white">34.53 ETH</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="box py-4  bg-card-bg rounded-4 text-center">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8 position-relative">
+                                <img src="images/index/creators/Avatar Placeholder (6).png" class="img-fluid mb-3"
+                                    alt="creator img">
+                                <div
+                                    class="mini-creator-card bg-main-bg top-0 start-0 position-absolute rounded-circle">
+                                    <span class="text-lite px-2">1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8">
+                                <h5 class="mb-1">Shroomie</h5>
+                            </div>
+                            <div class="col-10">
+                                <span class="text-lite">Total Sales: <span class="text-white">34.53 ETH</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="box py-4  bg-card-bg rounded-4 text-center">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8 position-relative">
+                                <img src="images/index/creators/Avatar Placeholder (7).png" class="img-fluid mb-3"
+                                    alt="creator img">
+                                <div
+                                    class="mini-creator-card bg-main-bg top-0 start-0 position-absolute rounded-circle">
+                                    <span class="text-lite px-2">1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8">
+                                <h5 class="mb-1">Robotica</h5>
+                            </div>
+                            <div class="col-10">
+                                <span class="text-lite">Total Sales: <span class="text-white">34.53 ETH</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-3 ">
+                    <div class="box py-4  bg-card-bg rounded-4 text-center">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8 position-relative">
+                                <img src="images/index/creators/Avatar Placeholder (8).png" class="img-fluid mb-3"
+                                    alt="creator img">
+                                <div
+                                    class="mini-creator-card bg-main-bg top-0 start-0 position-absolute rounded-circle">
+                                    <span class="text-lite px-2">1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8">
+                                <h5 class="mb-1">RustyRobot</h5>
+                            </div>
+                            <div class="col-10">
+                                <span class="text-lite">Total Sales: <span class="text-white">34.53 ETH</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box py-4  bg-card-bg rounded-4 text-center">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8 position-relative">
+                                <img src="images/index/creators/Avatar Placeholder.png" class="img-fluid mb-3"
+                                    alt="creator img">
+                                <div
+                                    class="mini-creator-card bg-main-bg top-0 start-0 position-absolute rounded-circle">
+                                    <span class="text-lite px-2">1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8">
+                                <h5 class="mb-1">Keepitreal</h5>
+                            </div>
+                            <div class="col-10">
+                                <span class="text-lite">Total Sales: <span class="text-white">34.53 ETH</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="box py-4  bg-card-bg rounded-4 text-center">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8 position-relative">
+                                <img src="images/index/creators/Avatar Placeholder (10).png" class="img-fluid mb-3"
+                                    alt="creator img">
+                                <div
+                                    class="mini-creator-card bg-main-bg top-0 start-0 position-absolute rounded-circle">
+                                    <span class="text-lite px-2">1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8">
+                                <h5 class="mb-1">Dotgu</h5>
+                            </div>
+                            <div class="col-10">
+                                <span class="text-lite">Total Sales: <span class="text-white">34.53 ETH</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="box py-4  bg-card-bg rounded-4 text-center">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8 position-relative">
+                                <img src="images/index/creators/Avatar Placeholder (11).png" class="img-fluid mb-3"
+                                    alt="creator img">
+                                <div
+                                    class="mini-creator-card bg-main-bg top-0 start-0 position-absolute rounded-circle">
+                                    <span class="text-lite px-2">1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8">
+                                <h5 class="mb-1">Ghiblier</h5>
+                            </div>
+                            <div class="col-10">
+                                <span class="text-lite">Total Sales: <span class="text-white">34.53 ETH</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- top creator for medium and small screen  -->
+
+    <section class="top-creator-section my-5 d-md-none d-block">
+        <div class="container">
+            <div class="row justify-content-center d-flex ">
+                <div class="col-md-8 px-0 col-sm-6 col-10">
+                    <h2>Top Creators</h2>
+                    <p>Checkout Top Rated Creators on the NFT Marketplace</p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 align-items-center d-none d-sm-flex justify-content-end">
+                    <button class="main-btn2 btn-sm btn px-md-5 px-3 py-md-3 py-2"><i
+                            class="bi pe-2 text-purple bi-rocket-takeoff"></i>View
+                        Rankings</button>
+                </div>
+            </div>
+            <div class="row mt-4 justify-content-center d-flex">
+                <div class="col-sm-6 px-4 px-sm-0 my-2 pe-sm-4 col-12">
+                    <div class="row">
+                        <div class="col-12 d-flex bg-card-bg py-2 rounded-4 gap-4 ">
+                            <div class="row">
+                                <div class="col-3 position-relative align-items-center d-flex text-center">
+                                    <!-- <div class="box "> -->
+                                    <img src="images/index/creators/Avatar Placeholder.png" class="img-fluid" alt="">
+
+                                    <div
+                                        class="mini-creator-card bg-main-bg top-0 start-0 position-absolute rounded-circle">
+                                        <span class="text-lite px-2">1</span>
+                                    </div>
+
+                                </div>
+                                <div class="col-9 align-items-center d-flex">
+                                    <div class="row">
+                                        <div class="col-12 px-0">
+                                            <h5 class="mb-0">Keepitreal</h5>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <span class="text-lite">Total Sales: &nbsp; <span class="text-white">34.53
+                                                    ETH</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 px-4 px-sm-0 my-2 ps-sm-4 col-12">
+                    <div class="row">
+                        <div class="col-12 d-flex bg-card-bg py-2 rounded-4 gap-4 ">
+                            <div class="row">
+                                <div class="col-3 position-relative align-items-center d-flex text-center">
+                                    <!-- <div class="box "> -->
+                                    <img src="images/index/creators/Avatar Placeholder (1).png" class="img-fluid"
+                                        alt="">
+
+                                    <div
+                                        class="mini-creator-card bg-main-bg top-0 start-0 position-absolute rounded-circle">
+                                        <span class="text-lite px-2">2</span>
+                                    </div>
+
+                                </div>
+                                <div class="col-9 align-items-center d-flex">
+                                    <div class="row">
+                                        <div class="col-12 px-0">
+                                            <h5 class="mb-0">Keepitreal</h5>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <span class="text-lite">Total Sales: &nbsp; <span class="text-white">34.53
+                                                    ETH</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 px-4 px-sm-0 my-2 pe-sm-4 col-12">
+                    <div class="row">
+                        <div class="col-12 d-flex bg-card-bg py-2 rounded-4 gap-4 ">
+                            <div class="row">
+                                <div class="col-3 position-relative align-items-center d-flex text-center">
+                                    <!-- <div class="box "> -->
+                                    <img src="images/index/creators/Avatar Placeholder (2).png" class="img-fluid"
+                                        alt="">
+
+                                    <div
+                                        class="mini-creator-card bg-main-bg top-0 start-0 position-absolute rounded-circle">
+                                        <span class="text-lite px-2">3</span>
+                                    </div>
+
+                                </div>
+                                <div class="col-9 align-items-center d-flex">
+                                    <div class="row">
+                                        <div class="col-12 px-0">
+                                            <h5 class="mb-0">Keepitreal</h5>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <span class="text-lite">Total Sales: &nbsp; <span class="text-white">34.53
+                                                    ETH</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 px-4 px-sm-0 my-2 ps-sm-4 col-12">
+                    <div class="row">
+                        <div class="col-12 d-flex bg-card-bg py-2 rounded-4 gap-4 ">
+                            <div class="row">
+                                <div class="col-3 position-relative align-items-center d-flex text-center">
+                                    <!-- <div class="box "> -->
+                                    <img src="images/index/creators/Avatar Placeholder (3).png" class="img-fluid"
+                                        alt="">
+
+                                    <div
+                                        class="mini-creator-card bg-main-bg top-0 start-0 position-absolute rounded-circle">
+                                        <span class="text-lite px-2">4</span>
+                                    </div>
+
+                                </div>
+                                <div class="col-9 align-items-center d-flex">
+                                    <div class="row">
+                                        <div class="col-12 px-0">
+                                            <h5 class="mb-0">Keepitreal</h5>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <span class="text-lite">Total Sales: &nbsp; <span class="text-white">34.53
+                                                    ETH</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 px-4 px-sm-0 my-2 pe-sm-4 col-12">
+                    <div class="row">
+                        <div class="col-12 d-flex bg-card-bg py-2 rounded-4 gap-4 ">
+                            <div class="row">
+                                <div class="col-3 position-relative align-items-center d-flex text-center">
+                                    <!-- <div class="box "> -->
+                                    <img src="images/index/creators/Avatar Placeholder (4).png" class="img-fluid"
+                                        alt="">
+
+                                    <div
+                                        class="mini-creator-card bg-main-bg top-0 start-0 position-absolute rounded-circle">
+                                        <span class="text-lite px-2">5</span>
+                                    </div>
+
+                                </div>
+                                <div class="col-9 align-items-center d-flex">
+                                    <div class="row">
+                                        <div class="col-12 px-0">
+                                            <h5 class="mb-0">Keepitreal</h5>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <span class="text-lite">Total Sales: &nbsp; <span class="text-white">34.53
+                                                    ETH</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 px-4 px-sm-0 my-2 ps-sm-4 col-12">
+                    <div class="row">
+                        <div class="col-12 d-flex bg-card-bg py-2 rounded-4 gap-4 ">
+                            <div class="row">
+                                <div class="col-3 position-relative align-items-center d-flex text-center">
+                                    <!-- <div class="box "> -->
+                                    <img src="images/index/creators/Avatar Placeholder (5).png" class="img-fluid"
+                                        alt="">
+
+                                    <div
+                                        class="mini-creator-card bg-main-bg top-0 start-0 position-absolute rounded-circle">
+                                        <span class="text-lite px-2">6</span>
+                                    </div>
+
+                                </div>
+                                <div class="col-9 align-items-center d-flex">
+                                    <div class="row">
+                                        <div class="col-12 px-0">
+                                            <h5 class="mb-0">Keepitreal</h5>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <span class="text-lite">Total Sales: &nbsp; <span class="text-white">34.53
+                                                    ETH</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 text-center justify-content-center">
+                <div class="col-10 px-0 align-items-center justify-content-center text-center d-flex d-sm-none">
+                    <button class="main-btn2 btn-sm btn text-center py-3 rounded-4 w-100"><i
+                            class="bi pe-2 text-purple bi-rocket-takeoff"></i>View
+                        Rankings</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- browse section starts here  -->
+    <section class="browse-section py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12 text-start">
+                    <h2>Browse Categories</h2>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="card bg-card-bg rounded-5">
+                        <img src="images/index/browse/browse 1.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="px-0 px-sm-3 mb-0 ">Art</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="card bg-card-bg rounded-5">
+                        <img src="images/index/browse/browse 2.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="px-0 px-sm-3 mb-0 ">Collectibles</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card bg-card-bg rounded-5">
+                        <img src="images/index/browse/browse 3.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="px-0 px-sm-3 mb-0 ">Music</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card bg-card-bg rounded-5">
+                        <img src="images/index/browse/browse 4.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="px-0 px-sm-3 mb-0 ">Photography</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="card bg-card-bg rounded-5">
+                        <img src="images/index/browse/browse 5.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="px-0 px-sm-3 mb-0 ">Video</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="card bg-card-bg rounded-5">
+                        <img src="images/index/browse/browse 6.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="px-0 px-sm-3 mb-0 ">Utility</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card bg-card-bg rounded-5">
+                        <img src="images/index/browse/browse 7.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="px-0 px-sm-3 mb-0 ">Sport</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card bg-card-bg rounded-5">
+                        <img src="images/index/browse/browse 8.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="px-0 px-sm-3 mb-0 ">Virtual</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- discover section starts here  -->
+    <section class="discover-section mt-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-7 col-sm-8  col-12">
+                    <h2>Discover More NFTs</h2>
+                    <p>Explore new trending NFTs</p>
+                </div>
+                <div class="col-md-5 col-sm-4 col-12 align-items-center d-none d-sm-flex justify-content-end">
+                    <button class="main-btn2 btn-sm btn px-md-5 px-3 py-md-3 py-2"><i
+                            class="bi pe-2 text-purple bi-rocket-takeoff"></i>See
+                        All</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-3 col-sm-6 col-12">
+                    <a class="text-decoration-none" href="orbit.html">
+                        <div class="card rounded-4 bg-card-bg">
+                            <img src="images/index/discover/discover 1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Distant Galaxy</h5>
+                                <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <img src="images/index/discover/user/discover user 1.png" class="img-fluid"
+                                            alt=" user img">
+                                        <span class="px-2 p-16-mono">MoonDancer</span>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="text-lite p-12-mono">Price</span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span class="text-lite p-12-mono">Highest Bid</span>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class=" p-16-mono">1.63 ETH</span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span class=" p-16-mono">0.33 ETH</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>      
+                </div>
+                <div class="col-md-4 mb-3 col-sm-6 col-12">
+                    <div class="card rounded-4 bg-card-bg">
+                        <img src="images/index/discover/discover 2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Distant Galaxy</h5>
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <img src="images/index/discover/user/discover user 2.png" class="img-fluid"
+                                        alt=" user img">
+                                    <span class="px-2 p-16-mono">MoonDancer</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class="text-lite p-12-mono">Price</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="text-lite p-12-mono">Highest Bid</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class=" p-16-mono">1.63 ETH</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class=" p-16-mono">0.33 ETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 col-sm-6 col-12 d-block d-sm-none d-md-block">
+                    <div class="card rounded-4 bg-card-bg">
+                        <img src="images/index/discover/discover 3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Distant Galaxy</h5>
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <img src="images/index/discover/user/discover user 3.png" class="img-fluid"
+                                        alt=" user img">
+                                    <span class="px-2 p-16-mono">MoonDancer</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class="text-lite p-12-mono">Price</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="text-lite p-12-mono">Highest Bid</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class=" p-16-mono">1.63 ETH</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class=" p-16-mono">0.33 ETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-3 align-items-center d-flex d-sm-none ">
+                    <button class="main-btn2 btn-sm btn px-md-5 w-100 px-5 py-md-3 py-2"><i
+                            class="bi pe-2 text-purple bi-rocket-takeoff"></i>See
+                        All</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- magic section starts here  -->
+    <section class="magic-section my-5">
+        <div class="container">
+            <div class="row pt-25">
+                <div class="col-md-5 col-sm-6">
+                    <div class="row">
+                        <div class="col-md-8 col-lg-5 col-sm-7 col-6 pb-3">
+                            <div class="box px-1 py-2 text-center rounded-pill bg-main-bg">
+                                <img src="images/index/discover/user/discover user 2.png" class="img-fluid" alt="">
+                                <span>Shroomie</span>
+                            </div>
+                        </div>
+                        <div class="col-12 ">
+                            <h3 class=" pb-3">Magic Mashrooms</h3>
+                            <button
+                                class="d-none d-sm-block main-btn2 bg-light text-dark btn-sm btn px-md-5 px-3 py-md-3 py-2">
+                                <i class="bi pe-2 text-purple bi bi-eye"></i>See
+                                NFT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 py-3 col-sm-6 col-12 align-items-center d-flex">
+                    <div class="row px-sm-0 px-3 justify-content-md-end justify-content-start">
+                        <div class="col-md-7 col-sm-12 col-12 rounded-4 countdown">
+                            <div class="row py-4">
+                                <div class="col-12">
+                                    <span class="p-12-mono">
+                                        Auction ends in:
+                                    </span>
+                                </div>
+                                <div class="col-4">
+                                    <h2>59 :</h2>
+                                </div>
+                                <div class="col-4">
+                                    <h2>59 :</h2>
+                                </div>
+                                <div class="col-4">
+                                    <h2>59</h2>
+                                </div>
+                                <div class="col-4">
+                                    <span class="p-12-mono">Hours</span>
+                                </div>
+                                <div class="col-4">
+                                    <span class="p-12-mono">Minutes</span>
+                                </div>
+                                <div class="col-4">
+                                    <span class="p-12-mono">Seconds</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pt-4">
+                            <button
+                                class="d-block d-sm-none w-100 d-sm-block main-btn2 bg-light rounded-4 text-dark btn-sm btn py-3">
+                                <i class="bi pe-2 text-purple bi bi-eye"></i>See
+                                NFT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- how it works section starts here  -->
+
+    <section class="how-section py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2 class="">How It Works</h2>
+                    <p class="text-light">Find out how to get started</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mb-2 mb-md-0 col-md-4">
+                    <div
+                        class="bg-card-bg border-0 rounded-3 px-3 py-sm-4 py-2 d-flex flex-sm-column flex-row align-items-center text-center text-md-start">
+                        <img src="images/index/how/Icon.png" alt="Wallet Icon" class="img-fluid mb-md-4 mb-0"
+                            style="max-width: 120px;">
+                        <div class="box text-sm-center text-start">
+                            <h5>Setup Your Wallet</h5>
+                            <p class="p-16-12 text-light mb-0">
+                                Set up the wallet of choice. Connect it to the NFT market by clicking the wallet icon in
+                                the top right corner.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-2 mb-md-0 col-md-4">
+                    <div
+                        class="bg-card-bg border-0 rounded-3 px-3 py-sm-4 py-2 d-flex flex-sm-column flex-row align-items-center text-center text-md-start">
+                        <img src="images/index/how/Icon (1).png" alt="Wallet Icon" class="img-fluid mb-md-4 mb-0"
+                            style="max-width: 120px;">
+                        <div class="box text-sm-center text-start">
+                            <h5>Create Collection</h5>
+                            <p class="p-16-12 text-light mb-0">
+                                Set up the wallet of choice. Connect it to the NFT market by clicking the wallet icon in
+                                the top right corner.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div
+                        class="bg-card-bg border-0 rounded-3 px-3 py-sm-4 py-2 d-flex flex-sm-column flex-row align-items-center text-center text-md-start">
+                        <img src="images/index/how/Icon (2).png" alt="Wallet Icon" class="img-fluid mb-md-4 mb-0"
+                            style="max-width: 120px;">
+                        <div class="box text-sm-center text-start">
+                            <h5>Start Earning </h5>
+                            <p class="p-16-12 text-light mb-0">
+                                Set up the wallet of choice. Connect it to the NFT market by clicking the wallet icon in
+                                the top right corner.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- join section strarts here  -->
+    <section class="join-section py-5">
+        <div class="container bg-sm-card-bg bg-main-bg px-sm-5 px-3">
+            <div class="row">
+                <div class="col-md-6 px-4 py-md-5 pt-sm-5">
+                    <div class="box">
+                        <img src="images/index/join.png" class="img-fluid" alt="astronout image">
+                    </div>
+                </div>
+                <div class="col-md-6 px-4 py-md-5 py-3 align-items-center d-flex">
+                    <div class="row">
+                        <div class="col-lg-10 col-12">
+                            <h2>Join Our Weakly Digest</h2>
+                            <p class="text-light">Get exclusive promotions & updates straight to your inbox.</p>
+                        </div>
+                        <div class="col-md-12 col-lg-10">
+                            <div class="input-group d-md-flex  d-none rounded-4 overflow-hidden">
+                                <input type="email" class="form-control py-2 text-dark"
+                                    placeholder="Enter your email here">
+                                <button class="btn btn-subscribe bg-purple px-lg-4 px-md-1 " type="button">
+                                    <span class="bi bi-envelope-fill"></span> Subscribe
+                                </button>
+                            </div>
+                            <div class="subscription-form d-block d-md-none mt-3">
+                                <div class="mb-3">
+                                    <input type="email" class="form-control rounded-pill"
+                                        placeholder="Enter Your Email Address">
+                                </div>
+                                <button type="submit" class="btn btn-subscribe rounded-pill w-100 bg-purple">
+                                    <i class="bi bi-envelope-fill me-2"></i>Subscribe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section starts here  -->
+
+    <section class="footer-section bg-card-bg py-5">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <img src="images/index/nav/Logo.png" class="img-fluid mb-3" alt="logo">
+                    <p class="p-16 text-gray">NFT marketplace UI created with Anima for Figma.</p>
+                    <p class="p-16 text-gray">Join our community</p>
+                    <div class="box">
+                        <i class="text-gray pe-2 fs-3 fab fa-discord"></i>
+                        <i class="text-gray pe-2 fs-3 fab fa-youtube"></i>
+                        <i class="text-gray pe-2 fs-3 fab fa-twitter"></i>
+                        <i class="text-gray fs-3 fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="text-22 fw-bold mb-4">Explore</h5>
+                    <div class="box d-flex flex-column gap-3">
+                        <a href="#" class="text-gray text-decoration-none">Marketplace</a>
+                        <a href="#" class="text-gray text-decoration-none">Rankings</a>
+                        <a href="#" class="text-gray text-decoration-none">Connect a wallet </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-8">
+                            <h5 class="text-22 fw-bold mb-4 mb-sm-3">Join Our Weakly Digest</h5>
+                            <p class="p-16 text-gray">Get exclusive promotions & updates straight to your inbox.</p>
+                        </div>
+                        <div class="col-md-12 col-lg-10">
+                            <div class="input-group d-md-flex  d-none rounded-4 overflow-hidden">
+                                <input type="email" class="form-control py-2 text-dark"
+                                    placeholder="Enter your email here">
+                                <button class="btn btn-subscribe bg-purple px-lg-4 px-md-1 " type="button">
+                                    <span class="bi bi-envelope-fill"></span> Subscribe
+                                </button>
+                            </div>
+                            <div class="subscription-form d-block d-md-none mt-3">
+                                <div class="mb-3">
+                                    <input type="email" class="form-control rounded-pill"
+                                        placeholder="Enter Your Email Address">
+                                </div>
+                                <button type="submit" class="btn btn-subscribe rounded-pill w-100 bg-purple">
+                                    <i class="bi bi-envelope-fill me-2"></i>Subscribe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-main-bg my-4">
+            <div class="row">
+                <div class="col-12">
+                    <p class="p-12-mono text-gray">Ⓒ NFT Market. Use this template freely.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- bootstrap javascrippt  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384..."
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

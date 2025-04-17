@@ -1,0 +1,99 @@
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: #2b2b2b;
+}
+
+body,
+body * {
+  color: white !important;
+}
+
+.magic-section {
+  position: relative;
+  overflow: hidden;
+  height: 110vh;
+  background-image: url('images/index/magic.png');
+  background-size:cover ; 
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position:center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(161, 89, 255, 0.633), rgba(0, 0, 0, 0.2));
+    z-index: 1;
+  }
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.search-bar input::placeholder {
+  color: #888;
+}
+
+/* creator hub section starts here  */
+
+.creatorhub-top-section{
+  background: url('images/pages/creatorhub/hero.png') no-repeat  center;
+  background-size: cover;
+  position: relative;
+  height: 60vh;
+} 
+.creatorhub-top-section img{
+  position: absolute;
+  bottom: -50px;
+}
+
+/* orbit section starts here  */
+.countdown{
+  background-color: #3b3b3bd5;
+}
+
+@media (max-width: 991.98px) {
+  h1 {
+    font-size: 2.5rem !important;
+  }
+  h2{
+    font-size: 1.75rem !important;
+  }
+  h3 {
+    font-size: 2.375rem !important;
+  }
+  p{
+    font-size: 1rem !important;
+  }
+  .navbar-collapse {
+    text-align: left !important;
+  }
+
+  .navbar-nav {
+    text-align: left !important;
+  }
+
+  .navbar-nav .nav-item {
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+
+}
+
+@media (max-width: 576px) {
+  h3{
+    font-size: 1.75rem !important;
+  }
+  h5 {
+    font-size: 1rem !important;
+  }
+  .p-16-12{
+    font-size: 0.75rem !important;
+}
+} 
